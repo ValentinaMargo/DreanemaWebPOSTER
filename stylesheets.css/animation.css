@@ -1,0 +1,579 @@
+/* /вращение ромба*/
+.black:hover {
+    animation: rotate;
+    animation-duration: 0.7s;
+}
+      
+@keyframes rotate {
+    0% {
+    transform: rotate(0);
+    }
+    100% {
+    transform: rotate(360deg) ;
+    }
+}
+
+/* /день и ночь*/
+
+.pink {
+    animation: secondGradientChangesColor 1s infinite linear;
+}
+
+@keyframes secondGradientChangesColor {
+    100% {
+      background: linear-gradient(white, #fe4c9d, white);
+    }
+ }
+
+/* /розовый будильник*/
+
+.pinktogreen {
+    position: absolute;
+    right: 55%;
+    animation: slide 1s;
+    animation-delay: 1s;
+    animation: slide 1s;
+    animation-delay: 1s;
+    animation: slide 1s;
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+    0% {
+        right: 55%;
+    }
+    100% {
+        right: 0%;
+    }
+}
+
+.pinktogreen:hover {
+    animation: circleChangesColor 1s infinite linear;
+}
+
+@keyframes circleChangesColor {
+    0%{
+        background: linear-gradient(#f35fb1,#bdff00);
+    }
+    100% {
+        background: linear-gradient(#bdff00,#f35fb1);
+    }
+}
+
+/* /будильник исчезает*/
+
+.greentowhite {
+    position: absolute;
+    left: 55%;
+    animation: slide 1s;
+    animation-delay: 1s;
+    animation: slide 1s;
+    animation-delay: 1s;
+    animation: slide 1s;
+    animation-delay: 1s;
+}
+
+@keyframes slide {
+    0% {
+        left: 55%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.greentowhite:hover {
+    animation: circleChangesColorleft 1s infinite linear;
+}
+
+@keyframes circleChangesColorleft {
+    0%{
+        background: linear-gradient(#bdff00, #ebffb4);
+    }
+    100% {
+        background: linear-gradient(#f35fb1,#bdff00);
+    }
+}
+
+/* /градиенты и капли*/
+
+.violet {
+    animation: gradientChangesColor 1s infinite linear;
+}
+
+@keyframes gradientChangesColor {
+    100% {
+      background: linear-gradient(#ebffb4, transparent);
+    }
+}
+
+.droplet {
+    animation: dropletChangesBackground 1s infinite steps(2);
+    animation-delay: -3s;
+}
+
+@keyframes dropletChangesBackground {
+    0% {
+      background-position: 0 120%;
+    }
+    100% {
+      background-position: -200% 120%;
+    }
+}
+
+/* /цветной таймер */
+
+.timer {
+    animation: timerChange 2s infinite steps(4);
+}
+
+@keyframes timerChange {
+    100% {
+        background-position: 400% 0;
+  }
+}
+
+/* /цветные горы */
+
+.splitcolor {
+    animation: colorrock 2s infinite steps(7);
+    animation-delay: 0.1s;
+}
+
+.splitcolor:hover {
+    animation-play-state: paused;
+}
+
+@keyframes colorrock {
+    0% {
+      background-position: 0 0;
+    }
+    17% {
+        background-position: -700px 0;
+    }
+    33% {
+      background-position: -1400px 0;
+    }
+    50% {
+        background-position: -2100px 0;
+    }
+    66% {
+          background-position: -2800px 0;
+    }
+    83% {
+        background-position: -3500px 0;
+    } 
+    100% {
+        background-position: -4200px 0;
+    }     
+}
+
+/* /печатная машинка */
+
+.violet2 {
+    display: inline-block;
+}
+
+.type {
+    overflow: hidden;
+    border-right: .10rem solid white;
+    white-space: nowrap;
+    font-size: 34px;
+    width: 0;
+    animation: typing 2s steps(21, end) infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/* /ромбик */
+
+.shine {
+    animation: shinechange 1s infinite steps(2);
+    animation-delay: 0.1s;
+}
+
+@keyframes shinechange {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+/* /пятнышки */
+
+.circle1 {
+    animation: changescircle1 4.5s infinite linear
+}
+
+@keyframes changescircle1 {
+    0% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    13% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    26% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    39% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    53% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    65% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    78% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    91% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    104% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+}
+
+.circle2 {
+    animation: changescircle2 4.5s infinite linear
+}
+
+@keyframes changescircle2 {
+    0% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    13% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    26% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    39% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    53% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    65% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    78% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    91% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    104% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+}
+
+.circle3 {
+    animation: changescircle3 4.5s infinite linear
+}
+
+@keyframes changescircle3 {
+    0% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    13% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    26% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    39% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    53% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    65% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    78% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    91% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    104% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+}
+
+.circle4 {
+    animation: changescircle4 4.5s infinite linear
+}
+
+@keyframes changescircle4 {
+    0% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    13% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    26% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    39% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    53% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    65% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    78% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    91% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    104% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+}
+
+.circle5 {
+    animation: changescircle5 4.5s infinite linear
+}
+
+@keyframes changescircle5 {
+    0% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    13% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    26% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    39% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    53% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    65% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    78% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    91% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    104% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+}
+
+.circle6 {
+    animation: changescircle6 4.5s infinite linear
+}
+
+@keyframes changescircle6 {
+    0% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    13% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    26% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    39% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    53% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    65% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    78% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    91% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    104% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+}
+
+.circle7 {
+    animation: changescircle7 4.5s infinite linear
+}
+
+@keyframes changescircle7 {
+    0% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    13% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    26% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    39% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    53% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    65% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    78% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    91% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    104% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+}
+
+.circle8 {
+    animation: changescircle8 4.5s infinite linear
+}
+
+@keyframes changescircle8 {
+    0% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+    13% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    26% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    39% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    53% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    65% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    78% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    91% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    104% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+}
+
+.circle9 {
+    animation: changescircle9 4.5s infinite linear
+}
+
+@keyframes changescircle9 {
+    0% {
+        background: linear-gradient(#F2A9D1, #FFFFFF);
+    }
+    13% {
+        background: linear-gradient(#BDFF00, #EBFFB4);
+    }
+    26% {
+        background: linear-gradient(#31D6E1, #BDFF00);
+    }
+    39% {
+        background: linear-gradient(#BDFF00, #E1CF31);
+    }
+    53% {
+        background: linear-gradient(#F35FB1, #FF008D);
+    }
+    65% {
+        background: linear-gradient(#FF6B00, #F2A9D1);
+    }
+    78% {
+        background: linear-gradient(#FF3FA9, #FFFFFF);
+    }
+    91% {
+        background: linear-gradient(#FAFF00, #FF85C9);
+    }
+    104% {
+        background: linear-gradient(#FAFF00, #FF3FA9);
+    }
+}
+/* /цветные волны */
+
+.imagine {
+    animation: colorwave 7s infinite steps(7);
+    animation-delay: 1s;
+}
+
+.imagine:hover {
+    animation-play-state: paused;
+}
+
+@keyframes colorwave {
+    0% {
+      background-position: 0 0;
+    }
+    17% {
+        background-position: -17% 0;
+    }
+    33% {
+      background-position:  -33% 0;
+    }
+    50% {
+        background-position: -50% 0;
+    }
+    66% {
+          background-position: -66% 0;
+    }
+    83% {
+        background-position: -83% 0;
+    } 
+    100% {
+        background-position: -100% 0;
+    }     
+}
+
+/* /таймер */
+
+.time {
+    animation: timeChange 1.5s infinite steps(4);
+    animation-delay: 1s;
+}
+
+@keyframes timeChange {
+    100% {
+          background-position: 400% 0;
+    }
+}
+
+/* /подвал */
+.blue, .blue1 {
+    animation: blueChangesColor 2s infinite linear;
+}
+
+@keyframes blueChangesColor {
+    0%{
+        background: linear-gradient(#8f56e9, #8f56e9);
+    }
+
+    50%{
+        background: linear-gradient(#8f56e9, black);
+    }
+
+    100% {
+        background: linear-gradient(#8f56e9, black, black);
+    }
+}

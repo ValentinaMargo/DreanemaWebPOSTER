@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+}
+body {
+  width: 100vw;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: url('../Img/grid.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+.black {
+  width: 65%;
+  height: 50%;
+  background-image: url('../Img/magic.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pink {
+  width: 65%;
+  height: 50%;
+  background: linear-gradient(black, #fe4c9d, black);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  align-content: center;
+  justify-content: space-between;
+  row-gap: 10%;
+}
+.violet {
+  width: 35%;
+  height: 100%;
+  background: linear-gradient(#8f56e9, transparent);
+  position: relative;
+}
+.unite {
+  width: 66%;
+  height: 100%;
+}
+.droplet {
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 200%;
+  background-image: url('../Img/dropletKeyFrames.svg');
+}
+.wrap {
+  width: 25%;
+  height: auto;
+  margin: 0 3%;
+}
+.wrap2 {
+  width: 35%;
+  height: auto;
+  display: inline-block;
+  margin: 0 15%;
+}
+#first,
+#second,
+#third,
+#forth {
+  position: relative;
+}
+#first,
+#forth {
+  width: 100%;
+  padding-bottom: 45%;
+  border-radius: 500px;
+  background: linear-gradient(#bdff00, #ebffb4);
+}
+#second,
+#third {
+  width: 100%;
+  padding-bottom: 45%;
+  border-radius: 600px;
+  background: linear-gradient(#bdff00, #ebffb4);
+}
+#second,
+#forth {
+  background: linear-gradient(#f35fb1, #bdff00);
+}
+
+.circle {
+  width: 45%;
+  height: 100%;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.pinktogreen {
+  background: linear-gradient(#f35fb1, #bdff00);
+  right: 0;
+}
+.greentowhite {
+  background: linear-gradient(#bdff00, #ebffb4);
+}
+
+/*второй экран попытка*/
+
+section2 {
+  width: 100vw;
+  height: 98vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url('../Img/grid.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.yellow {
+  width: 17%;
+  height: 75%;
+  position: relative;
+}
+
+.timer {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 415%;
+  background-image: url('../Img/Split1.png');
+}
+
+.black2 {
+  width: 83%;
+  height: 75%;
+  position: relative;
+}
+
+.splitcolor {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: repeat;
+  background-size: 760%;
+  background-image: url('../Img/splitcolor.png');
+}
+
+.violet2 {
+  width: 100%;
+  height: 25%;
+  background-color: #8f56e9;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.type {
+  font-family: 'Mak';
+  font-size: 34px;
+  color: #ebffb4;
+  position: relative;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+/*третий экран попытка*/
+
+section3 {
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url('../Img/grid.jpg');
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.green {
+  width: 55%;
+  height: 100%;
+  background-color: #bdff00;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.shine {
+  width: 100%;
+  height: 100%;
+  background-position:absolute;
+  background-repeat: repeat;
+  background-size: 200%;
+  background-image: url('../Img/Shine.png');
+}
+
+.black3 {
+  width: 45%;
+  height: 100%;
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.colordots {
+  width: 100%;
+  height: 100%;
+  background-position:absolute;
+  background-repeat: repeat;
+  background-size: 106%;
+  background-image: url('../Img/BG.png');
+  margin-top: 0.25%;
+}
+
+.circle1,
+.circle2,
+.circle3,
+.circle4,
+.circle5,
+.circle6,
+.circle7,
+.circle8,
+.circle9 {
+  width: 7.5%;
+  height: 14%;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.circle1 {
+  margin-top: 0.19%;
+  margin-left: 15.3%;
+  background: linear-gradient(#BDFF00, #EBFFB4);
+}
+
+.circle2 {
+  margin-top: 0.19%;
+  margin-left: 30.54%;
+  background: linear-gradient(#31D6E1, #BDFF00);
+}
+
+.circle3 {
+  margin-top: 0.19%;
+  margin-left: 38.1%;
+  background: linear-gradient(#BDFF00, #E1CF31);
+}
+
+.circle4 {
+  margin-top: 15.38%;
+  margin-left: 0.1%;
+  background: linear-gradient(#F35FB1, #FF008D);
+}
+
+.circle5 {
+  margin-top: 15.38%;
+  margin-left: 22.92%;
+  background: linear-gradient(#FF6B00, #F2A9D1);
+}
+
+.circle6 {
+  margin-top: 30.57%;
+  margin-left: 30.54%;
+  background: linear-gradient(#FF3FA9, #FFFFFF);
+}.circle7 {
+  margin-top: 38.2%;
+  margin-left: 7.7%;
+  background: linear-gradient(#FAFF00, #FF85C9);
+}
+
+.circle8 {
+  margin-top: 38.2%;
+  margin-left: 15.3%;
+  background: linear-gradient(#FAFF00, #FF3FA9);
+}
+
+.circle9 {
+  margin-top: 38.2%;
+  margin-left: 38.1%;
+  background: linear-gradient(#F2A9D1, #FFFFFF);
+}
+
+
+
+/*четвертый экран попытка*/
+
+section4 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.violet3 {
+  width: 85%;
+  height: 75%;
+  background-color: #8f56e9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.imagine {
+  width: 100%;
+  height: 100%;
+  background-position:absolute;
+  background-repeat: repeat;
+  background-size: 700%;
+  background-image: url('../Img/imagine.png');
+}
+
+.yellow2 {
+  width: 15%;
+  height: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.time {
+  width: 100%;
+  height: 100%;
+  background-position:absolute;
+  background-repeat: repeat;
+  background-size: 400%;
+  background-image: url('../Img/time.png');
+}
+
+.blue {
+  width: 50%;
+  height: 26%;
+  background-color: #8f56e9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  height: 26%;
+  font-family: 'Mak';
+  font-size: 16px;
+  color:#ebffb4;
+  position: relative;
+  margin-left: 8%;
+  margin-top: 8%;
+}
+
+.blue1 {
+  width: 50%;
+  height: 26%;
+  background-color: #8f56e9;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo {
+  height: 26%;
+  font-family: 'Mak';
+  font-size: 16px;
+  color:#ebffb4;
+  position: relative;
+  margin-left: 34%;
+  margin-top: 8%;
+}
